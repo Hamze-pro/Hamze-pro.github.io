@@ -3,12 +3,17 @@ html {
 }
 
 div{
-
+  /* Defines a reasonable width for the box */
   width: 200px;
+  /* Adjusted height to center text vertically */
   height: 100px;
+  /* Uses flexbox for easy centering */
   display: flex;
+  /* Uses flexbox for easy centering */
   align-items: center;
+  /* Centers text horizontally */
   justify-content: center;
+  /* Centers the box horizontally */
   margin: 0 auto;
 
 
@@ -26,7 +31,10 @@ div{
     rgba(0, 0, 0, 0.2) 100%
   );
   box-shadow:
+    /* Standard shadow for raised effect */
     3px 3px 10px rgba(0, 0, 0, 0.3),
+     /* Light inset for 3D highlight */
     inset 2px 2px 5px rgba(255, 255, 255, 0.3),
+    /* Dark inset for depth effect */
     inset -2px -2px 5px rgba(0, 0, 0, 0.3);
 }
