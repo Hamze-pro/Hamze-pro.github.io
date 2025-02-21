@@ -4,4 +4,19 @@ html {
 
 div{
 
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+
+  font-size: 1.125rem;
+  background-color: #3498db;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px black;
+  border-radius: 10px;
+  border: 1px solid #2980b9;
+
 }
