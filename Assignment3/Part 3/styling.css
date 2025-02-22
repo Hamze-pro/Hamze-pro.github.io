@@ -54,3 +54,20 @@ header, footer {
   font-family: 'SansSerifFont';
   src: url('path-to-sans-serif-font.woff2') format('woff2');
 }
+
+body {
+  font-family: 'SerifFont', serif;
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'SansSerifFont', sans-serif;
+  letter-spacing: 1px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
