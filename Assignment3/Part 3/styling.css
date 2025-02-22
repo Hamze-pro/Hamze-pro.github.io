@@ -41,3 +41,16 @@ header, footer {
   border-top: 5px solid #a66;
   border-bottom: 5px solid #a66;
 }
+
+/* Additional styles for project brief */
+
+/* Font setup */
+@font-face {
+  font-family: 'SerifFont';
+  src: url('path-to-serif-font.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SansSerifFont';
+  src: url('path-to-sans-serif-font.woff2') format('woff2');
+}
