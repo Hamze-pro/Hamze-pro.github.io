@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+
+<!--
+	Name: Djama Kayad, Hamze
+	File: index.html
+	Date: 21 February 2025
+	This file is about creating a silly story generator website.
+-->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
 
     <title>Silly story generator</title>
 
     <style>
+      /* Basic styling for the webpage */
       body {
         font-family: helvetica, sans-serif;
         width: 350px;
@@ -25,6 +33,7 @@
         width: 150px;
       }
 
+      /* The paragraph will initially be hidden */
       p {
         background: #ffc125;
         color: #5e2612;
@@ -35,21 +44,26 @@
   </head>
 
   <body>
+    <!-- Input field for custom name -->
     <div>
       <label for="customname">Enter custom name:</label>
       <input id="customname" type="text" placeholder="" />
     </div>
+    <!-- Radio buttons for US and UK region selection -->
     <div>
-      <label for="us">US</label
-      ><input id="us" type="radio" name="ukus" value="us" checked />
-      <label for="uk">UK</label
-      ><input id="uk" type="radio" name="ukus" value="uk" />
+      <label for="us">US</label>
+      <input id="us" type="radio" name="ukus" value="us" checked />
+      <label for="uk">UK</label>
+      <input id="uk" type="radio" name="ukus" value="uk" />
     </div>
+    <!-- Button to generate a random story -->
     <div>
       <button class="randomize">Generate random story</button>
     </div>
-    <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
+    <!-- Story output area -->
     <p class="story"></p>
-<script src="main.js"> </script>
+    
+    <!-- Linking external JavaScript file -->
+    <script src="main.js"> </script>
   </body>
 </html>
