@@ -13,3 +13,16 @@ const altText = {
   'pic5.jpg': 'Butterfly on a green leaf'
 };
 
+// Populate the thumbnail bar
+imageList.forEach(image => {
+  const newImage = document.createElement('img');
+  newImage.setAttribute('src', `images/${image}`);
+  newImage.setAttribute('alt', altText[image]);
+  thumbBar.appendChild(newImage);
+
+  // Click event to change the displayed image
+  newImage.addEventListener('click', () => {
+    displayedImg.src = newImage.src;
+    displayedImg.alt = newImage.alt;
+  });
+});
