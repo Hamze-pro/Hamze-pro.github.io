@@ -26,3 +26,14 @@ imageList.forEach(image => {
     displayedImg.alt = newImage.alt;
   });
 });
+
+// Darken/Lighten functionality
+btn.addEventListener('click', () => {
+  if (btn.textContent === 'Darken') {
+    overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
+    btn.textContent = 'Lighten';
+  } else {
+    overlay.style.backgroundColor = 'rgba(0,0,0,0)';
+    btn.textContent = 'Darken';
+  }
+});
