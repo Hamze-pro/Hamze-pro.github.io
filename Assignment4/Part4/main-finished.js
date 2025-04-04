@@ -1,3 +1,8 @@
+//Name: Djama Kayad, Hamze
+//File: main-finished.js
+//Date: 04 April 2025
+//This file is about creating a website for bouncing balls.
+
 // set up canvas
 
 const canvas = document.querySelector("canvas");
