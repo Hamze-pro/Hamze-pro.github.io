@@ -5,20 +5,24 @@ Date: 04 April 2025
 This file is about creating a website for bouncing balls. 
 */
 
+/* Remove default margin from html and body */
 html, body {
   margin: 0;
 }
 
+/* Set global font and ensure full height for html element */
 html {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   height: 100%;
 }
 
+/* Prevent scrolling and inherit full height for body */
 body {
   overflow: hidden;
   height: inherit;
 }
 
+/* Style for the main heading */
 h1 {
   font-size: 2rem;
   letter-spacing: -1px;
