@@ -1,3 +1,9 @@
+// Name: Djama Kayad, Hamze
+// File: index.html
+// Date: 20 March 2025
+// This file is about creating a silly story generator website.
+
+
 // Selecting elements from the HTML
 const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
