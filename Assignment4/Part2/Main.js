@@ -1,3 +1,8 @@
+// Name: Djama Kayad, Hamze
+// File: index.html
+// Date: 20 March 2025
+// This file is about creating a website that displays pictures and you can play it by choosing which one you want to see it in full screen.
+
 // Selecting key elements from the document
 const displayedImg = document.querySelector('.displayed-img'); // Main displayed image
 const thumbBar = document.querySelector('.thumb-bar'); // Thumbnail container
