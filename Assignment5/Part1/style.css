@@ -1,0 +1,315 @@
+/*
+Name: Djama Kayad, Hamze
+File: style.css
+Date: 11 April 2025
+Description:fictional nature site displaying a "factual" article about bears. As it stands, 
+  it has a number of accessibility issues —
+  exploring the existing site to fix them to the best of my ability. 
+*/
+
+/* || General setup */
+
+/* Remove default margin and padding from html and body */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set base font size and background color for the page */
+html {
+  font-size: 10px;
+  background-color: #dde;
+}
+
+/* Center the body and set a minimum width */
+body {
+  width: 80%;
+  min-width: 1024px;
+  margin: 0 auto;
+}
+
+/* || typography */
+
+/* Set custom font and color for headings */
+h1, h2, h3 {
+  font-family: 'Sonsie One', cursive;
+  color: #2a2a2a;
+}
+
+/* Set default font and color for body content */
+p, input, li, table, label {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #555555;
+}
+
+/* Style the main heading */
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 10px black;
+}
+
+/* Style subheadings */
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* Style font tag with size="5" */
+font[size="5"] {
+  font-size: 2.2rem;
+}
+
+/* Style paragraph, list items, and tables for readability */
+p, li, table {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/* || header layout */
+
+/* Apply white background to specific structural elements */
+nav[class="nav"], article, footer, .secondary {
+  background-color: white;
+}
+
+/* Add padding to content sections */
+article, footer, .secondary {
+  padding: 10px 30px;
+}
+
+/* Space articles from adjacent content */
+article {
+  margin-right: 10px;
+}
+
+/* Style the navigation bar */
+nav[class="nav"] {
+  height: 50px;
+  display: flex;
+  padding: 1% 0;
+  margin-bottom: 10px;
+}
+
+/* Style the navigation list */
+nav[class="nav"] ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+}
+
+/* Style each nav item */
+nav[class="nav"] li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+/* Style navigation links */
+nav[class="nav"] a {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+/* Style the search bar section in nav */
+nav[class="nav"] .search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 2em;
+}
+
+/* Style input elements inside search */
+.search input {
+  font-size: 1.6rem;
+  height: 32px;
+}
+
+/* Flex settings for the search input field */
+.search input[type="search"] {
+  flex: 3;
+}
+
+/* Style the search button */
+.search input[type="submit"] {
+  flex: 1;
+  margin-left: 1rem;
+  background: #333;
+  border: 0;
+  color: white;
+}
+
+/* || main layout */
+
+/* Use flex layout for main content */
+main {
+  display: flex;
+}
+
+/* Main article content takes more space */
+article {
+  flex: 5;
+}
+
+/* Sidebar or secondary section */
+.secondary {
+  flex: 2;
+}
+
+/* Add spacing above the footer */
+footer {
+  margin-top: 10px;
+}
+
+/* Table styling */
+
+/* Basic table styling with background and layout */
+table {
+  width: 100%;
+  background-color: #dde;
+  border-collapse: collapse;
+}
+
+/* Padding for table cells */
+th, td {
+  padding: 10px;
+}
+
+/* Center-align table data */
+td {
+  text-align: center;
+}
+
+/* Add border to column headers */
+th[scope="col"] {
+  border-bottom: 1px solid black;
+}
+
+/* Alternate row background for better readability */
+tbody tr:nth-child(odd) {
+  background-color: #def;
+}
+
+/* styling content images and audio */
+
+/* Center-align images and audio */
+img, audio {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Set fixed width for audio elements */
+audio {
+  width: 500px;
+}
+
+/* Comments styling */
+
+/* Background and padding for comments section */
+.comments {
+  background-color: #def;
+  padding: 10px;
+}
+
+/* Indicate clickable show/hide button */
+.show-hide {
+  cursor: pointer;
+}
+
+/* Custom font size for font tag inside comments */
+.comments font[size="6"] {
+  font-size: 2rem;
+}
+
+/* Adjust spacing for second large font element in comments */
+.comments font[size="6"]:nth-of-type(2) {
+  margin-bottom: 0;
+}
+
+/* Add margin under the comment form */
+.comment-form {
+  margin-bottom: 3rem;
+}
+
+/* Align form label and input fields in a row */
+.comment-form .flex-pair {
+  display: flex;
+  padding: 0 3rem 1rem;
+}
+
+/* Align label text to the right inside form */
+.comment-form label {
+  align-self: center;
+  flex: 2;
+  text-align: right;
+}
+
+/* Set width and margin for input fields */
+.comment-form input {
+  margin-left: 1rem;
+  flex: 6;
+}
+
+/* Style and center the show/hide button */
+.show-hide {
+  text-align: center;
+  width: 150px;
+}
+
+/* Set font size and line height for form elements and button */
+.comment-form input, .comment-form label, .show-hide {
+  font-size: 1.6rem;
+  line-height: 32px;
+}
+
+/* Style the submit button and show/hide button */
+.comment-form input[type="submit"], .show-hide {
+  background: #333;
+  border: 0;
+  color: white;
+}
+
+/* Style the submit button specifically */
+.comment-form input[type="submit"] {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Remove spacing above the comment list */
+.comment-container {
+  margin-top: 0;
+}
+
+/* Style individual comment items */
+.comment-container li {
+  list-style-type: none;
+  display: flex;
+}
+
+/* Style the name in a comment */
+.comment-container li p:nth-child(1) {
+  flex: 1;
+  font-weight: bold;
+}
+
+/* Style the comment text */
+.comment-container li p:nth-child(2) {
+  flex: 5;
+}
+
+/* Screen reader only text (for accessibility) */
+.srrd {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
