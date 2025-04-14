@@ -1,5 +1,5 @@
 //Name: Djama Kayad, Hamze
-//File: main-finished.js
+//File: main .js
 //Date: 11 April 2025
 //Description:fictional nature site displaying a "factual" article about bears. 
   It has a number of accessibility issues —
