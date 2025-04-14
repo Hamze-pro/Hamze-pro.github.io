@@ -1,3 +1,10 @@
+//Name: Djama Kayad, Hamze
+//File: main-finished.js
+//Date: 11 April 2025
+//Description:fictional nature site displaying a "factual" article about bears. 
+  It has a number of accessibility issues —
+  exploring the existing site to fix them to the best of my ability.
+
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
